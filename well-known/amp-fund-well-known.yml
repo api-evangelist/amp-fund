@@ -1,0 +1,49 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.amppublic.com/
+notes: >-
+  Every /.well-known/ document probed returned 404. AMP PBC serves a single-page
+  marketing site with no discovery surface. Recorded so re-runs do not re-probe
+  blindly; no WellKnown or SecurityTxt pointer is wired in apis.yml because no
+  document was found.
+host: https://www.amppublic.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 404
+- path: /sitemap.xml
+  status: 404
+additional_hosts:
+- host: https://amppbc.com
+  note: redirects to https://www.amppublic.com/
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+subdomains_probed:
+- host: docs.amppublic.com
+  resolves: false
+- host: api.amppublic.com
+  resolves: false
+- host: developer.amppublic.com
+  resolves: false
+- host: developers.amppublic.com
+  resolves: false
+- host: status.amppublic.com
+  resolves: false
+- host: blog.amppublic.com
+  resolves: false
+- host: trust.amppublic.com
+  resolves: false

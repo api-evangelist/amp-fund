@@ -1,20 +1,72 @@
 aid: amp-fund
 name: AMP Fund
-description: AMP Fund is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'AMP (AMP PBC) is a public benefit corporation founded in 2025 by Anjney
+  Midha, a former Andreessen Horowitz general partner, to build an independent "AI
+  grid" — a pooled compute utility for frontier AI research teams. Rather than operating
+  as a cloud provider or a conventional venture firm, AMP acts as an independent system
+  operator: data center operators and labs contribute underutilized GPU capacity to
+  a shared network, and member research teams draw base-load and burst compute from
+  that pool at rates intended to sit below the volatile spot market. AMP pairs capital
+  with compute, having raised roughly $1.3 billion for its first fund, and its PBC
+  charter is structured so leadership can supply compute at cost without shareholder
+  challenge. It has also committed a Public Wealth Fund of up to $500 million through
+  2030 toward education, workforce readiness, healthcare access, and economic resilience
+  in communities affected by the AI transition. AMP publishes no public API, developer
+  portal, or documentation surface as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/amp-fund/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.amppublic.com/amp-logo.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
+x-notes: 'AMP PBC is an AI-compute utility and investment firm, not an API producer.
+  Founded by an a16z alumnus and appearing on a16z''s investment list; the x-backed-by
+  pointer reflects that association. Enrichment confirmed no API, no developer docs,
+  no /.well-known/ documents, and no verifiable GitHub organization.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Artificial Intelligence
+- Compute
+- Infrastructure
+- Venture Capital
+- Public Benefit Corporation
+- Data Centers
+- GPU
 apis: []
+common:
+- type: DomainSecurity
+  url: security/amp-fund-domain-security.yml
+- type: LLMsTxt
+  url: llms/amp-fund-llms.txt
+- type: Website
+  url: https://www.amppublic.com/
+- type: Contact
+  url: mailto:grid@amppbc.com
+- type: Twitter
+  url: https://x.com/amppublic
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/amp-pbc
+x-enrichment:
+  date: '2026-07-19'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
