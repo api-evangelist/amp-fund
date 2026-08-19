@@ -36,7 +36,7 @@ x-notes: 'AMP PBC is an AI-compute utility and investment firm, not an API produ
   Founded by an a16z alumnus and appearing on a16z''s investment list; the x-backed-by
   pointer reflects that association. Enrichment confirmed no API, no developer docs,
   no /.well-known/ documents, and no verifiable GitHub organization.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
