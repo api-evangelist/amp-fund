@@ -57,7 +57,7 @@ tags:
 - Infrastructure
 - Venture Capital
 - Public Benefit Corporation
-- Data-Center
+- Data Center
 - GPU
 tags_raw:
 - Company
@@ -68,6 +68,7 @@ tags_raw:
 - Public Benefit Corporation
 - Data Centers
 - GPU
+- Data-Center
 apis: []
 common:
 - type: DomainSecurity
